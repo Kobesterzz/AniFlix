@@ -1,12 +1,13 @@
 import React from 'react';
+import AniFlixLogo from './AniFlixLogo.png'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        {/* Header: You can place your aniFlix logo and navigation here */}
-        <img src="your-anime-logo.png" alt="aniFlix Logo" />
+        {}
+        <img src={AniFlixLogo} alt="aniFlix Logo" />
         <nav>
           <ul>
             <li>Home</li>
