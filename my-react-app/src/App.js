@@ -1,5 +1,6 @@
 import React from 'react';
-import AniFlixLogo from './AniFlixLogo.png'
+import AniFlixLogo from '../src/img/AniFlixLogo.png'
+import AOT from './img/AOT.jpg'
 import './App.css';
 
 function App() {
@@ -20,6 +21,11 @@ function App() {
 
       <main>
         {/* Main Content: Display anime content, featured shows, or categories */}
+
+        <section className="Head">
+          <img src={AOT}/>
+        </section>
+
         <section className="featured">
           <h2>Featured Shows</h2>
           {/* Add featured anime here */}
