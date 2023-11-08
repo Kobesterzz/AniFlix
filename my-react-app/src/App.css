@@ -1,27 +1,26 @@
-/* Reset default margin and padding for all elements */
+
 * {
   margin: 0;
   padding: 0;
 }
 
-/* Set a background color for the entire app */
+
 body {
-  background-color: #181818; /* Dark background color */
-  color: #fff; /* Text color */
-  font-family: Arial, sans-serif; /* Choose a suitable font-family */
+  background-color: #181818; 
+  color: #fff; 
+  font-family: Arial, sans-serif; 
 }
 
-/* Style the header section */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #121212; /* Dark header background color */
+  background-color: #121212; 
   padding: 1rem;
 }
 
 header img {
-  width: 100px; /* Adjust the logo size as needed */
+  width: 100px; 
 }
 
 nav ul {
@@ -34,30 +33,43 @@ nav ul li {
   cursor: pointer;
 }
 
-/* Style the main content */
+
 main {
   padding: 1rem;
 }
 
-h2 {
-  color: #e50914; /* Red color for headings */
+.Head{
+  padding: 0rem;
+  display: flex;
+  justify-content: center;
 }
 
-/* Style the featured shows section */
+
+.Head img {
+  max-width: 100%; 
+  height: auto; 
+}
+
+h2 {
+  color: #e50914; 
+}
+
+
 .featured {
   margin-bottom: 1rem;
 }
 
-/* Style the categories section */
+
 .categories {
   /* Add styling as needed */
 }
 
-/* Style the footer */
 footer {
+  position: fixed; /* Fixed position keeps it at the bottom of the viewport */
+  bottom: 0; /* Sticks to the bottom */
+  width: 100%; /* Full width of the viewport */
   background-color: #121212; /* Dark footer background color */
   text-align: center;
   padding: 1rem;
   color: #888;
 }
-

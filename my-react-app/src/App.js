@@ -19,12 +19,12 @@ function App() {
         </nav>
       </header>
 
-      <main>
-        {/* Main Content: Display anime content, featured shows, or categories */}
-
-        <section className="Head">
+      <section className="Head">
           <img src={AOT}/>
         </section>
+
+      <main>
+        {/* Main Content: Display anime content, featured shows, or categories */}
 
         <section className="featured">
           <h2>Featured Shows</h2>
