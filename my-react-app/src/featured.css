@@ -1,0 +1,56 @@
+/* For Webkit-based browsers (e.g., Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgb(84, 84, 84); /* Make the scrollbar thumb transparent */
+  }
+  
+  /* For Firefox */
+  * {
+    scrollbar-width: 10px; /* Use 'auto' for older versions of Firefox */
+    scrollbar-color: rgb(73, 73, 73);
+    
+  }
+
+  
+.featured-shows-container {
+    display: flex;
+    overflow-x: auto;
+    justify-content: center;
+  }
+  
+  .featured-show {
+    margin: 0 20px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .featured-show img {
+    max-width: 100%; /* Ensure images don't exceed the container's width */
+    height: auto;
+    width: auto; /* Set a fixed width for all images */
+    min-width:300px;
+    height: 250px; /* Set a fixed height for all images */
+  }
+  
+  .featured-show:hover {
+    transform: scale(1.2);
+  }
+  
+  .show-info {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: rgb(255, 240, 240);
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .featured-show:hover .show-info {
+    display: block;
+  }

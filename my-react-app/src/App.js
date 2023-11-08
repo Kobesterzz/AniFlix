@@ -2,6 +2,8 @@ import React from 'react';
 import AniFlixLogo from '../src/img/AniFlixLogo.png'
 import AOT from './img/AOT.jpg'
 import './App.css';
+import Categories from './categories';
+import FeaturedShows from './Featured.js';
 
 function App() {
   return (
@@ -28,12 +30,12 @@ function App() {
 
         <section className="featured">
           <h2>Featured Shows</h2>
-          {/* Add featured anime here */}
+          <FeaturedShows />
         </section>
 
         <section className="categories">
           <h2>Categories</h2>
-          {/* Display anime categories */}
+          <Categories />
         </section>
       </main>
 
