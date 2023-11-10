@@ -22,8 +22,11 @@ function App() {
       </header>
 
       <section className="Head">
-          <img src={AOT}/>
-        </section>
+      <div className="image-container">
+        <img src={AOT} alt="Attack on Titan" />
+        <div className="overlay"></div>
+      </div>
+      </section>
 
       <main>
         {/* Main Content: Display anime content, featured shows, or categories */}
