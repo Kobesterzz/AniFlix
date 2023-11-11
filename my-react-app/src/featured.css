@@ -16,24 +16,26 @@
   }
 
   
-.featured-shows-container {
+  .featured-shows-container {
     display: flex;
-    overflow-x: auto;
-    justify-content: center;
+    overflow-x: auto; /* Allow horizontal scrolling */
+    scroll-snap-type: x mandatory; /* Snap to the nearest show */
   }
   
   .featured-show {
     margin: 0 20px;
     cursor: pointer;
     transition: transform 0.2s;
+    scroll-snap-align: start; /* Snap each show to the start of the container */
   }
   
   .featured-show img {
-    max-width: 100%; /* Ensure images don't exceed the container's width */
+    max-width: 100%;
     height: auto;
-    width: auto; /* Set a fixed width for all images */
-    min-width:300px;
-    height: 250px; /* Set a fixed height for all images */
+    width: auto;
+    min-width: 400px;
+    height: 250px;
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
   }
   
   .featured-show:hover {
@@ -54,3 +56,4 @@
   .featured-show:hover .show-info {
     display: block;
   }
+  
