@@ -83,6 +83,8 @@ h2 {
 
 .featured {
   margin-bottom: 1rem;
+  margin-top: -9rem;
+  z-index: 5;
 }
 
 footer {

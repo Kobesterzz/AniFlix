@@ -1,7 +1,7 @@
 /* For Webkit-based browsers (e.g., Chrome, Safari) */
 ::-webkit-scrollbar {
     width: 5px;
-    height: 5px
+    height: 12px
   }
   
   ::-webkit-scrollbar-thumb {
