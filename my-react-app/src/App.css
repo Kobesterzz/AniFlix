@@ -58,8 +58,7 @@ main {
   z-index: -2; /* Set a positive z-index for the image */
 }
 
-.image-container {
-}
+
 
 .image-container img {
   width: 100%; /* Make sure the image fills its container */
@@ -88,7 +87,7 @@ h2 {
 }
 
 footer {
-  position: fixed; /* Fixed position keeps it at the bottom of the viewport */
+  position: relative; /* Fixed position keeps it at the bottom of the viewport */
   bottom: 0; /* Sticks to the bottom */
   width: 100%; /* Full width of the viewport */
   background-color: #121212; /* Dark footer background color */
